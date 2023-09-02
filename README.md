@@ -20,6 +20,8 @@ Explore our [Data Description](Data_Description.md) for detailed data informatio
 ### **`Our model`**
 
 1. Install Python 3.10.9. The required packages are as follows:
+
+```
 - numpy==1.25.0
 - scikit-learn==1.2.2
 - scipy==1.10.1
@@ -30,6 +32,7 @@ Explore our [Data Description](Data_Description.md) for detailed data informatio
 - torch-sparse==0.6.17
 - torch-spline-conv==1.2.2
 - torchcontrib==0.0.2
+```
 
 2. Download data. You can obtain all pre-processed data from [Google Drive](https://drive.google.com/drive/folders/12WeTJ6HzjGI0giirlu__PFSGtxno7cWU?usp=share_link).
    
