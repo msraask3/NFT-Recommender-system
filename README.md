@@ -9,9 +9,6 @@ Explore our [Data Description](Data_description.md) for detailed data informatio
 
 
 
-![model](assets/figure_model_architecture.png)
-
-
 
 
 
