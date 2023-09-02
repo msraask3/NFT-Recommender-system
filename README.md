@@ -14,17 +14,17 @@ Explore our [Data Description](Data_Description.md) for detailed data informatio
 
 1. Install Python 3.10.9. The required packages are as follows:
 ```
-numpy                    1.25.0
-pandas                   2.0.3
-scikit-learn             1.2.2
-scipy                    1.10.1
-torch                    2.0.0
-torch-cluster            1.6.1
-torch-geometric          1.7.2
-torch-scatter            2.1.1
-torch-sparse             0.6.17
-torch-spline-conv        1.2.2
-torchcontrib             0.0.2
+numpy==1.25.0
+pandas==2.0.3
+scikit-learn==1.2.2
+scipy==1.10.1
+torch==2.0.0
+torch-cluster==1.6.1
+torch-geometric==1.7.2
+torch-scatter==2.1.1
+torch-sparse==0.6.17
+torch-spline-conv==1.2.2
+torchcontrib==0.0.2
 
 ```
 
