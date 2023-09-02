@@ -37,9 +37,8 @@ torchcontrib==0.0.2
 
 3. Create a directory `dataset/collections` and place the downladed data in that location. 
 
-4. Download requirement packages ***pip install -r requirements.txt***
 
-5. Train the model. 
+4. Train the model. 
 
    We provide the experiment scripts of all datasets in the file `run.sh`. You can reproduce the experiment results by: 
 
@@ -47,7 +46,7 @@ torchcontrib==0.0.2
    bash run.sh
    ~~~
 
-6. *(Ablation studies)* Train the model using a single graph. 
+5. *(Ablation studies)* Train the model using a single graph. 
 
    In this case, since the multi-modal attention used in the existing NFT-MARS model cannot be applied, the model name has been changed to "MO", which stands for Multi Objective. For example, "MO_v" is a single graph model that utilizes visual features. 
 
