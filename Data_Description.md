@@ -112,25 +112,20 @@ We processed each descriptive word into embeddings using a pre-trained [BERT](ht
 
 Each entry's embedding was then concatenated with other embeddings related to the same item. Hence, each item's embedding size was 768 multiplied by the number of visual traits considered. For example, if we considered 6 visual traits and used the BERT base model, each item's embedding size would be 768*6=4608.<br>
 <br>
-### Price, Transaction
-Unlike content features, obtained representations from transaction features do not
-have sufficient embedding size since there is one average value per each item. So we duplicated the same value to have 64 dimensions.<br>
+### Price
+For the price feature, we created a empty vector length of 768, equivalent of the entire transaction days and filled it with the sold price on the corresponding date when the transaction happens. We have only considered selling price in Ethereum (ETH), Wrapped Ethereum (WETH), and Blur Pool due to valuation issues and prices quoted in other currencies like USDC and DAI were replaced with 0. Where there are multiple sales for a token in a day, we used the average purchase price for that day. 
+
+### Transaction
+The frequency of transactions associated with a particular item can be indicative of its popularity. For the transaction feature, we used the same method as price feature but filled the values with the number of transactions happened in that day.<br>
 <br>
 
 ## 2.2. User features
 ### Price
-The average purchase price of each user was used to represent the user’s financial capability and willingness to pay for NFTs, calculated in the same manner as the price feature of items.<br>
-<br>
-
-### Transaction frequency
-The user’s average holding period for purchased tokens can provide insight into the
-user’s trading behavior. This feature was calculated in the same manner as the transaction feature of items.<br>
+The purchase price of each user was used to represent the user’s financial capability and willingness to pay for NFTs, calculated in the same manner as the price feature of items.<br>
 <br>
 
 ### Transaction count
-We use each wallet address’s transaction count to represent how active the user is in the
-NFT market.<br>
-
+We use each wallet address’s transaction count to provide insight into the user's trading behavior. This feature was calculated in the same manner as the transaction feature of items.<br>
 <br>
 
 ## 2.3. Price movement label
