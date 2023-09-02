@@ -1,0 +1,2 @@
+user_layers_dim choice ['[64, 64]','[64, 32]','[128,64]']
+item_layers_dim choice ['[64, 64]','[64, 32]','[128,64]']

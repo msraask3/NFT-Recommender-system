@@ -1,0 +1,2 @@
+learning_rate choice [0.01]
+mlp_hidden_size choice ['[64,64,64]','[256,256,256]','[512,512,512]']

@@ -1,0 +1,3 @@
+learning_rate choice [0.01]
+attention_size choice [8,16]
+mlp_hidden_size choice ['[64,64,64]','[256,256,256]','[64,64]','[256,256]']

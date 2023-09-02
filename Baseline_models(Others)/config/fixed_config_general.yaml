@@ -1,0 +1,44 @@
+ITEM_ID_FIELD: item_id
+USER_ID_FIELD: user_id
+checkpoint_dir: saved/
+data_path: dataset/collections/
+epochs: 50
+eval_args:
+  group_by: user
+  mode: pop100
+eval_batch_size: 4096
+eval_step: 1
+field_separator: "\t"
+learner: adam
+learning_rate: 0.001
+log_wandb: true
+loss_decimal_place: 4
+metric_decimal_place: 4
+metrics:
+- Recall
+- MRR
+- NDCG
+- Hit
+- MAP
+- Precision
+- GAUC
+reproducibility: true
+save_dataloaders: false
+save_dataset: false
+seed: 2023
+seq_separator: ' '
+show_progress: true
+stopping_step: 3000
+topk:
+- 10
+- 20
+- 30
+- 40
+- 50
+train_batch_size: 2048
+train_neg_sample_args:
+  candidate_num: 0
+  distribution: popularity
+  dynamic: false
+  sample_num: 5
+valid_metric: Recall@50

@@ -1,0 +1,3 @@
+attention_size: 16
+learning_rate: 0.01
+mlp_hidden_size: '[256,256]'

@@ -1,0 +1,2 @@
+dropout_prob choice [0.0, 0.2, 0.4]
+mlp_hidden_size choice ['[64,32,16]','[32,16,8]']
