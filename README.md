@@ -25,7 +25,6 @@ torch-scatter==2.1.1
 torch-sparse==0.6.17
 torch-spline-conv==1.2.2
 torchcontrib==0.0.2
-
 ```
 
 
