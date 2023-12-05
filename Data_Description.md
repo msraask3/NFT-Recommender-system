@@ -2,7 +2,7 @@
 
 ## 1.1. Overview
 
-In our study, we focus on the four top-ranked ERC-721 based NFT collections, which are Bored Apes Yacht Club (BAYC), Cool Cats, Doodles, Meebits, in terms of market capitalisation as of August 2022 according to DappRadar. We collected content features using OpenSea API and transaction data from Etherscan NFT tracker adn web3.py, covering the entire period between 1st September 2021 and 10th March 2023. Our dataset consists of implicit feedback and considers purchase history as user-item interactions. We implemented a minimum threshold of five interactions for items in our user-item matrices and incorporated item and user features to enhance the predictive power. The data includes 4,575 users, 25,014 items, and 56,981 interactions across all four collections. <br>
+In our study, we focus on the four top-ranked ERC-721 based NFT collections, which are Bored Apes Yacht Club (BAYC), Cool Cats, Doodles, Meebits, in terms of market capitalisation as of August 2022 according to DappRadar. We collected content features using OpenSea API and transaction data from Etherscan NFT tracker and web3.py, covering the entire period between 1st September 2021 and 10th March 2023. Our dataset consists of implicit feedback and considers purchase history as user-item interactions. We implemented a minimum threshold of five interactions for items in our user-item matrices and incorporated item and user features to enhance the predictive power. The data includes 4,575 users, 25,014 items, and 56,981 interactions across all four collections. <br>
 <br>
 
 The number of users, items and interactions for each collection used for the experiment.<br>
